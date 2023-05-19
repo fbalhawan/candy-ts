@@ -1,9 +1,12 @@
 {
-  "name": "candy_ts",
+  "name": "candy-ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./dist/*.js",
+    "dev": "node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/fbalhawan/candy_ts/issues"
   },
-  "homepage": "https://github.com/fbalhawan/candy_ts#readme"
+  "homepage": "https://github.com/fbalhawan/candy_ts#readme",
+  "devDependencies": {
+    "rimraf": "^5.0.1"
+  }
 }
